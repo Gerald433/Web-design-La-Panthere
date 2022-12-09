@@ -113,6 +113,7 @@ a:hover {
 
 .texture-paper::before {
     background: url("img/texture-paper.png") 0 0/280px 280px;
+    
 }
 
 .nav>li>.dropdown a,
@@ -252,6 +253,11 @@ a:hover {
     color: rgba(0, 0, 0, 0.7);
     border-color: rgba(0, 0, 0, 0.3);
 }
+.flex{
+    display:flex ;
+    flex-direction: column;
+}
+
 
 .voffset {
     margin-top: 30px;
@@ -329,12 +335,6 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
-}
-
-.optim{
-    border: 1px solid black;
-    border-radius: 50%;
-    background-color: black;
 }
 
 
@@ -701,11 +701,18 @@ h2 {
     font-size: 22px;
     line-height: 1.4em;
     color: black;
+    
 }
 
 h3 {
     font-size: 15px;
 }
+
+
+.autor{
+    text-align: center;
+}
+
 
 .med-width-whitespace {
     max-width: 800px;
@@ -755,12 +762,12 @@ h3 {
 
 .ltc-atomic-tangerine,
 .tc-white {
-    color: #f3976c !important;
+    color: #ffffff !important;
 }
 
 .btn-atomic-tangerine {
-    background: #352017;
-    color: #fff !important;
+    background: #F3976C;
+    color: rgb(0, 0, 0) !important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -790,11 +797,11 @@ h3 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.webp");
+    background-image: url("img/agence-la-panthere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -820,12 +827,15 @@ h3 {
     .nav-center.navbar .nav {
         max-width: 100%;
     }
+
+    
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
+    
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -873,9 +883,19 @@ h3 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    
 }
 
 @media (max-width: 767px) {
+    .bg-presentation {
+        background-image: url("img/image-de-presentation_mobile.jpg");
+    }
+    
+
+    .bg-banniere {
+        background-image: url("img/agence-la-panthere_mobile.jpg");
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -889,8 +909,8 @@ h3 {
     h5,
     h6,
     p {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
     }
 
     .b-parallax {
