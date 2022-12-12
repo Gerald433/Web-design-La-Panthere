@@ -1,6 +1,10 @@
 .d-bloc .navbar-toggle .icon-bar,
+
+
+
 body {
     background: #fff;
+    
 }
 
 .bloc .container,
@@ -20,10 +24,10 @@ body {
     float: left;
 }
 
-a,
+/* a,
 button {
     outline: 0 !important;
-}
+} */
 
 .scrollToTop,
 a,
@@ -196,7 +200,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, 0.5);
+    color: black;
 }
 
 .d-bloc .panel button:hover,
@@ -255,6 +259,11 @@ a:hover {
 }
 .flex{
     display:flex ;
+    justify-content: space-between;
+}
+
+.flex2{
+    display:flex ;
     flex-direction: column;
 }
 
@@ -309,6 +318,7 @@ a:hover {
 .nav>li {
     margin-top: 4px;
     font-size: 16px;
+    /* width: 100px; */
 }
 
 .navbar-nav .open .dropdown-menu>li>a {
@@ -384,6 +394,7 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+    
 }
 
 .nav>li>.dropdown a {
@@ -634,14 +645,14 @@ p {
 h1,
 h3,
 h4 {
-    color: #333 !important;
+    color: rgb(0, 0, 0);
 }
 
 .cta-hero,
 .ltc-white,
-.white {
-    color: black;
-}
+/* .white {
+    color: rgb(255, 255, 255)!important;
+} */
 
 .container {
     max-width: 1000px;
@@ -726,7 +737,8 @@ h3 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    margin: auto;
 }
 
 .portfolio-row {
@@ -762,7 +774,8 @@ h3 {
 
 .ltc-atomic-tangerine,
 .tc-white {
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
+    color: white ;
 }
 
 .btn-atomic-tangerine {
@@ -804,7 +817,16 @@ h3 {
     background-image: url("img/image-de-presentation.jpg");
 }
 
+/* .a{
+    border-color: #F3976C;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 34px;
+} */
+
 @media (max-width: 1024px) {
+    
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -827,18 +849,15 @@ h3 {
     .nav-center.navbar .nav {
         max-width: 100%;
     }
-
-    
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
-    
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -883,19 +902,19 @@ h3 {
         padding-left: 0;
         padding-right: 0;
     }
-
-    
 }
 
 @media (max-width: 767px) {
     .bg-presentation {
         background-image: url("img/image-de-presentation_mobile.jpg");
     }
-    
+
 
     .bg-banniere {
         background-image: url("img/agence-la-panthere_mobile.jpg");
+        background-size: cover !important;
     }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1056,5 +1075,9 @@ h3 {
 
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .flex{
+        display:flex ;
+        justify-content: space-between;
     }
 }
